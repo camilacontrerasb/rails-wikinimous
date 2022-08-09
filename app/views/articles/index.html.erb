@@ -1,0 +1,8 @@
+<h1>Our Articles</h1>
+<%= link_to 'Add your Article', new_article_path %>
+
+<ul>
+  <% @articles.each do |resto| %>
+    <li><%= link_to resto.title, article_path(resto) %></li>
+  <% end %>
+</ul>
